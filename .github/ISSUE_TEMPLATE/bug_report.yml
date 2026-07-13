@@ -64,6 +64,19 @@ body:
       required: true
 
   - type: textarea
+    id: diagnostics
+    attributes:
+      label: Environment
+      description: |
+        Pre-filled automatically when you report from inside the app
+        (**Help ▸ Report a Bug**). It carries how NovusTerm is configured — version,
+        OS, shell, language, plan — and **never** the contents of your terminal.
+        Edit or delete anything you do not want to share.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
     id: extra
     attributes:
       label: Anything else?
