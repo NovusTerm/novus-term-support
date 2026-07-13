@@ -25,9 +25,11 @@ issues](https://github.com/NovusTerm/novus-term-support/issues?q=is%3Aissue) —
 someone may have hit it already.
 
 > **NovusTerm never transmits the contents of your terminal.** A bug report
-> carries only your app version and operating system. Whatever you paste into an
-> issue, you paste yourself — and issues here are **public**, so never include
-> API keys, tokens, passwords, or private paths.
+> carries how the app is **configured** — version, operating system, shell,
+> language, plan — and never what you are **doing**: no scrollback, no commands,
+> no file paths. Whatever you paste into an issue, you paste yourself — and issues
+> here are **public**, so never include API keys, tokens, passwords, or private
+> paths.
 
 ## Security vulnerabilities
 
