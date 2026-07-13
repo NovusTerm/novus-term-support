@@ -1,0 +1,76 @@
+name: Bug report
+description: Something in NovusTerm is broken or behaves unexpectedly.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        **This issue will be public.** Never paste API keys, tokens, passwords,
+        or private file paths. Redact anything sensitive before you submit.
+
+        Found a **security vulnerability**? Do not file it here — follow
+        [SECURITY.md](https://github.com/NovusTerm/novus-term-support/blob/main/SECURITY.md).
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched the existing issues and this is not a duplicate.
+          required: true
+        - label: I am on the latest version of NovusTerm, and it still happens.
+          required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug. What did you expect instead?
+      placeholder: I split a pane and the terminal on the right stopped accepting input…
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How do we reproduce it?
+      description: Numbered steps, starting from a freshly opened NovusTerm.
+      placeholder: |
+        1. Open NovusTerm
+        2. Press Cmd+D to split the pane
+        3. Click the right pane and type
+        4. Nothing appears
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: NovusTerm version
+      description: Settings ▸ About. Pre-filled if you reported from inside the app.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "macOS 15.5 (Apple Silicon)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: |
+        Screenshots, a screen recording, or the error text from a crash screen.
+        Drag files straight into this box.
+
+        **Do not paste terminal output that contains secrets.**
+    validations:
+      required: false
